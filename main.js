@@ -37,14 +37,6 @@ alert(`A atividade: ${inputNomeAti.value} já foi inserida`)
 atividade.push(inputNomeAti.value);
 notas.push(parseFloat(inputNotaAtividade.value));
 
-let linha = `<tr>`
-linha += `<td>${inputNomeAti.value}</td>`;
-linha += `<td>${inputNotaAtividade.value}</td>`;
-linha += `<td>${inputNotaAtividade.value >= notaMinima ? imgAprovado : imgReprovado }</td>`;
-linha += `</tr>`
-
-linhas += linha
-
 
 inputNotaAtividade.value = '';
 inputNomeAti.value = '';
